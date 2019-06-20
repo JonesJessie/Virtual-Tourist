@@ -12,6 +12,8 @@
 		19A60B7722BC4BFC00BB2F90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19A60B7522BC4BFC00BB2F90 /* Main.storyboard */; };
 		19A60B7922BC4C1000BB2F90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19A60B7822BC4C1000BB2F90 /* Assets.xcassets */; };
 		19A60B7C22BC4C1000BB2F90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19A60B7A22BC4C1000BB2F90 /* LaunchScreen.storyboard */; };
+		19A60B8522BC4EB400BB2F90 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A60B8422BC4EB300BB2F90 /* Network.swift */; };
+		19A60B8722BC4F1400BB2F90 /* PhotoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A60B8622BC4F1400BB2F90 /* PhotoResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		19A60B7822BC4C1000BB2F90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19A60B7B22BC4C1000BB2F90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19A60B7D22BC4C1000BB2F90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19A60B8422BC4EB300BB2F90 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		19A60B8622BC4F1400BB2F90 /* PhotoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		19A60B7022BC4BFC00BB2F90 /* Virtual Tourist */ = {
 			isa = PBXGroup;
 			children = (
+				19A60B8322BC4E7800BB2F90 /* Client */,
 				19A60B7122BC4BFC00BB2F90 /* AppDelegate.swift */,
 				19A60B7322BC4BFC00BB2F90 /* ViewController.swift */,
 				19A60B7522BC4BFC00BB2F90 /* Main.storyboard */,
@@ -62,6 +67,15 @@
 				19A60B7D22BC4C1000BB2F90 /* Info.plist */,
 			);
 			path = "Virtual Tourist";
+			sourceTree = "<group>";
+		};
+		19A60B8322BC4E7800BB2F90 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				19A60B8422BC4EB300BB2F90 /* Network.swift */,
+				19A60B8622BC4F1400BB2F90 /* PhotoResponse.swift */,
+			);
+			path = Client;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +151,8 @@
 			files = (
 				19A60B7422BC4BFC00BB2F90 /* ViewController.swift in Sources */,
 				19A60B7222BC4BFC00BB2F90 /* AppDelegate.swift in Sources */,
+				19A60B8522BC4EB400BB2F90 /* Network.swift in Sources */,
+				19A60B8722BC4F1400BB2F90 /* PhotoResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
