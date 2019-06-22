@@ -25,7 +25,7 @@ class MapViewController: UIViewController {
         if let savedRegion = UserDefaults.standard.loadMapState() {
             mapView.setRegion(savedRegion, animated: true)
         }
-        
+        //HOLD TO ADD PIN
         let longPressGestureRecog = UILongPressGestureRecognizer(target: self, action: #selector(addAnnotation(press:)))
         longPressGestureRecog.minimumPressDuration = 1.0
         mapView.addGestureRecognizer(longPressGestureRecog)
@@ -174,6 +174,9 @@ extension MapViewController: MKMapViewDelegate {
 }
 
 extension UserDefaults {
+    
+    //SAVES MAP LOCATION UPON RELAUNCHING
+    
     func saveMapState(region: MKCoordinateRegion) {
         let mapState = MapState(longitude: region.center.longitude, latitude: region.center.latitude, longitudeDelta: region.span.longitudeDelta, latitudeDelta: region.span.latitudeDelta)
         if let encodedMapState = try? JSONEncoder().encode(mapState) {
