@@ -1,5 +1,5 @@
 //
-//  ViewCell.swift
+//  PhotoCollectionViewCell.swift
 //  Virtual Tourist
 //
 //  Created by Mac User on 6/21/19.
@@ -7,7 +7,8 @@
 //
 
 import Foundation
+import UIKit
 
 class PhotoCollectionViewCell: UICollectionViewCell {
-    @IBOutlet var imageView: UIImageView!
+    @IBOutlet weak var imageView: UIImageView!
 }

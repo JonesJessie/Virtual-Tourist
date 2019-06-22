@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CfQ-AL-ELf">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -13,7 +13,7 @@
         <!--Map View Controller-->
         <scene sceneID="gut-sQ-N4l">
             <objects>
-                <viewController id="aOU-NS-dTh" customClass="MapViewController" customModule="VirtualTourist" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="aOU-NS-dTh" customClass="MapViewController" customModule="Virtual_Tourist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rny-Mr-8tu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -46,7 +46,7 @@
         <!--Pin Detail View Controller-->
         <scene sceneID="kRT-i5-rtF">
             <objects>
-                <viewController storyboardIdentifier="PinDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VAz-h8-1PO" customClass="PinDetailViewController" customModule="VirtualTourist" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PinDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VAz-h8-1PO" customClass="PinDetailViewController" customModule="Virtual_Tourist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1VU-nc-NfX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -89,7 +89,7 @@
                                             <constraint firstItem="6Hq-uc-pRe" firstAttribute="leading" secondItem="Mxt-Dv-GRZ" secondAttribute="leading" id="xyN-OD-uWn"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="imageView" destination="6Hq-uc-pRe" id="EjW-9j-4lz"/>
+                                            <outlet property="imageView" destination="6Hq-uc-pRe" id="4UC-Lq-fry"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>

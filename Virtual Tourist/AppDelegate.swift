@@ -16,7 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         let dataController = DataController.shared
-        dataController.load
+        dataController.load()
+        
         return true
     }
 
@@ -40,7 +41,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         //let dataController = DataController.shared
-        try? DataController.shared.ViewContext.save()
+        try? DataController.shared.viewContext.save()
     }
 
 
