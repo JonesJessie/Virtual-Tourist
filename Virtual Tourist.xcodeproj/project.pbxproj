@@ -17,10 +17,10 @@
 		19B0B63522BDA0940029A8CD /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B0B63422BDA0940029A8CD /* PhotoCollectionViewCell.swift */; };
 		19B0B63A22BDA4C40029A8CD /* MapState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B0B63922BDA4C40029A8CD /* MapState.swift */; };
 		19B0B63C22BDA4E10029A8CD /* PinAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B0B63B22BDA4E10029A8CD /* PinAnnotation.swift */; };
-		19B0B63E22BDA6480029A8CD /* PinDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B0B63D22BDA6480029A8CD /* PinDetailViewController.swift */; };
 		19B0B64022BDA6740029A8CD /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B0B63F22BDA6740029A8CD /* LoadingViewController.swift */; };
 		19B0B64222BDA6B10029A8CD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B0B64122BDA6B10029A8CD /* MapViewController.swift */; };
 		19B0B64522BDA8CF0029A8CD /* VirtualTourist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 19B0B64322BDA8CF0029A8CD /* VirtualTourist.xcdatamodeld */; };
+		19B0B64722BDC58A0029A8CD /* PinDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B0B64622BDC58A0029A8CD /* PinDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,10 +36,10 @@
 		19B0B63422BDA0940029A8CD /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		19B0B63922BDA4C40029A8CD /* MapState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapState.swift; sourceTree = "<group>"; };
 		19B0B63B22BDA4E10029A8CD /* PinAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinAnnotation.swift; sourceTree = "<group>"; };
-		19B0B63D22BDA6480029A8CD /* PinDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinDetailViewController.swift; sourceTree = "<group>"; };
 		19B0B63F22BDA6740029A8CD /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		19B0B64122BDA6B10029A8CD /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		19B0B64422BDA8CF0029A8CD /* VirtualTourist.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VirtualTourist.xcdatamodel; sourceTree = "<group>"; };
+		19B0B64622BDC58A0029A8CD /* PinDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,9 +96,9 @@
 			children = (
 				19B0B63422BDA0940029A8CD /* PhotoCollectionViewCell.swift */,
 				19A60B7322BC4BFC00BB2F90 /* DataController.swift */,
-				19B0B63D22BDA6480029A8CD /* PinDetailViewController.swift */,
 				19B0B63F22BDA6740029A8CD /* LoadingViewController.swift */,
 				19B0B64122BDA6B10029A8CD /* MapViewController.swift */,
+				19B0B64622BDC58A0029A8CD /* PinDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -195,11 +195,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				19B0B63A22BDA4C40029A8CD /* MapState.swift in Sources */,
-				19B0B63E22BDA6480029A8CD /* PinDetailViewController.swift in Sources */,
 				19A60B7422BC4BFC00BB2F90 /* DataController.swift in Sources */,
 				19B0B64222BDA6B10029A8CD /* MapViewController.swift in Sources */,
 				19B0B64522BDA8CF0029A8CD /* VirtualTourist.xcdatamodeld in Sources */,
 				19A60B7222BC4BFC00BB2F90 /* AppDelegate.swift in Sources */,
+				19B0B64722BDC58A0029A8CD /* PinDetailViewController.swift in Sources */,
 				19A60B8522BC4EB400BB2F90 /* Network.swift in Sources */,
 				19B0B64022BDA6740029A8CD /* LoadingViewController.swift in Sources */,
 				19A60B8722BC4F1400BB2F90 /* SearchPhotoResponse.swift in Sources */,

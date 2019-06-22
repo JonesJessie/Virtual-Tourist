@@ -18,7 +18,7 @@ class MapViewController: UIViewController {
     
     @IBOutlet var mapView: MKMapView!
     var pins: [Pin] = []
-    let spinner = SpinnerViewController()
+    let loading = LoadingViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,7 +81,7 @@ class MapViewController: UIViewController {
                 let annotation = PinAnnotation(coordinate: coordinate, pin: newPin)
                 mapView.addAnnotation(annotation)
             } else {
-                showAlert(title: "Warning", message: "Could not create new pin, please try again.")
+                showAlert(title: "Error", message: "Could not create new pin, please try again.")
             }
         }
     }
@@ -92,18 +92,18 @@ class MapViewController: UIViewController {
         present(alertVC, animated: true, completion: nil)
     }
     
-    func showSpinner() {
-        addChild(spinner)
-        spinner.view.frame = view.frame
-        view.addSubview(spinner.view)
-        spinner.didMove(toParent: self)
+    func showLoading() {
+        addChild(loading)
+        loading.view.frame = view.frame
+        view.addSubview(loading.view)
+        loading.didMove(toParent: self)
     }
     
-    func hideSpinner() {
+    func hideLoading() {
         DispatchQueue.main.async {
-            self.spinner.willMove(toParent: nil)
-            self.spinner.view.removeFromSuperview()
-            self.spinner.removeFromParent()
+            self.loading.willMove(toParent: nil)
+            self.loading.view.removeFromSuperview()
+            self.loading.removeFromParent()
         }
     }
 }
@@ -141,7 +141,7 @@ extension MapViewController: MKMapViewDelegate {
                 return
             }
             DispatchQueue.main.async {
-                self.showSpinner()
+                self.showLoading()
             }
             NetworkClient.searchPhotosFor(latitude: pinAnnotation.coordinate.latitude, longitude: pinAnnotation.coordinate.longitude) { (response, error) in
                 if response.count > 0 {
@@ -159,13 +159,13 @@ extension MapViewController: MKMapViewDelegate {
                     pinDetailViewController.pinAnnotation = pinAnnotation
                     
                     DispatchQueue.main.async {
-                        self.hideSpinner()
+                        self.hideLoading()
                         self.navigationController?.pushViewController(pinDetailViewController, animated: true)
                     }
                 } else {
                     DispatchQueue.main.async {
-                        self.hideSpinner()
-                        self.showAlert(title: "Sorry", message: "No images were found for this location or something went wrong.")
+                        self.hideLoading()
+                        self.showAlert(title: "Error", message: "No images were found for this location or something went wrong.")
                     }
                 }
             }
